@@ -344,8 +344,9 @@ class ClockPresentation(
         clockText = android.widget.TextView(context).apply {
             text = "00:00:00"
             setTextColor(android.graphics.Color.WHITE)
-            textSize = 96f
-            typeface = android.graphics.Typeface.DEFAULT_BOLD
+            textSize = 42f
+            //remote DEFAULT_BOLD,  go with DEFAULT
+            typeface = android.graphics.Typeface.DEFAULT
             // remove any background
             setBackgroundColor(android.graphics.Color.TRANSPARENT)
         }
